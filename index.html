@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كرم بيكري | تورت تخطف الأنفاس</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Cairo & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bakery: {
+              50: '#FDF8F5',
+              100: '#FBEFE8',
+              200: '#F6DEC8',
+              300: '#EFC5A1',
+              400: '#E4A574',
+              500: '#D7844C',
+              600: '#BA6634',
+              700: '#944D25',
+              800: '#6E381A',
+              900: '#462310',
+            },
+            cream: '#FFFDF9',
+            warmdark: '#2B1E17',
+          },
+          fontFamily: {
+            sans: ['Cairo', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #FDF8F5;
+      color: #2B1E17;
+      scroll-behavior: smooth;
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 50%, rgba(228, 165, 116, 0.18) 0%, rgba(253, 248, 245, 0) 70%);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-bakery-50 flex flex-col selection:bg-bakery-200 selection:text-bakery-900">
+
+  <!-- Header / Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-bakery-200/60 shadow-sm transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <!-- Site Logo / Name -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-2xl bg-bakery-500 text-white flex items-center justify-center text-xl shadow-md shadow-bakery-500/30 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-cake-candles"></i>
+        </div>
+        <span class="text-2xl font-black text-warmdark tracking-tight">كرم بيكري</span>
+      </a>
+
+      <!-- Quick Actions in Header -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+20223456789" class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-bakery-800 hover:text-bakery-600 transition-colors py-2 px-3">
+          <i class="fa-solid fa-phone text-xs"></i>
+          <span>0223456789</span>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=201012345678&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%85%20%D8%A8%D9%8A%D9%83%D8%B1%D9%8A" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white px-4 py-2 rounded-xl text-sm font-bold shadow-sm transition-transform active:scale-95">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>واتساب</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (Split: Copy & Actions / Features Card) -->
+  <main class="flex-grow">
+    <section class="relative overflow-hidden pt-8 pb-16 lg:py-20 hero-glow">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Right Column: Content & Buttons -->
+          <div class="lg:col-span-7 text-center lg:text-right space-y-6">
+            
+            <!-- Small Tagline Above Title -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-bakery-100 border border-bakery-300 text-bakery-800 text-xs sm:text-sm font-bold shadow-xs">
+              <i class="fa-solid fa-wheat-awn text-bakery-600"></i>
+              <span>مخبوزات بيتي من القاهرة من 2020</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-warmdark leading-tight tracking-tight">
+              تورت تخطف <span class="text-bakery-600 underline decoration-bakery-300 decoration-wavy decoration-2">الأنفاس</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-lg sm:text-xl text-stone-700 leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium">
+              تورت مناسبات وكوكيز بتتخبز طازة على طلبك وبتوصل لكل القاهرة
+            </p>
+
+            <!-- Action Buttons: Main (WhatsApp) & Secondary (Call) -->
+            <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+              <!-- Big Primary Button -->
+              <a href="https://api.whatsapp.com/send?phone=201012345678&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%83%D8%B1%D9%85%20%D8%A8%D9%8A%D9%83%D8%B1%D9%8A%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D9%88%D8%B1%D8%AA%D8%A9" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-bakery-600 hover:bg-bakery-700 text-white font-bold text-lg shadow-xl shadow-bakery-600/30 hover:shadow-bakery-600/40 transform hover:-translate-y-0.5 active:translate-y-0 transition-all">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>اطلب تورتتك</span>
+              </a>
+
+              <!-- Secondary Lighter Button -->
+              <a href="tel:+20223456789" 
+                 class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-white hover:bg-bakery-100 text-bakery-800 border-2 border-bakery-200 font-bold text-lg shadow-sm hover:border-bakery-400 transition-all">
+                <i class="fa-solid fa-phone text-bakery-600"></i>
+                <span>كلمنا</span>
+              </a>
+            </div>
+
+            <!-- Instant Contact Helper -->
+            <div class="pt-1 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+              <p class="text-xs text-stone-500 font-medium flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                واتساب: 01012345678 | هاتف: 0223456789
+              </p>
+              <button onclick="navigator.clipboard.writeText('01012345678'); this.innerText='تم النسخ!'; setTimeout(()=>this.innerText='نسخ الواتساب', 2000)" 
+                      class="text-xs bg-bakery-100 hover:bg-bakery-200 text-bakery-800 px-2.5 py-1 rounded-lg font-bold transition-colors">
+                نسخ الواتساب
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Story Section: منى -->
+    <section class="py-14 sm:py-20 bg-white border-y border-bakery-200/70">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="bg-bakery-50/70 rounded-3xl p-8 sm:p-12 border border-bakery-200/80 shadow-sm relative">
+          
+          <div class="flex flex-col md:flex-row items-center gap-8 text-center md:text-right">
+            <!-- Story Avatar / Visual -->
+            <div class="relative shrink-0">
+              <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-tr from-bakery-500 to-bakery-300 p-1 shadow-lg shadow-bakery-500/20">
+                <div class="w-full h-full rounded-full bg-cream flex items-center justify-center text-bakery-700 text-4xl sm:text-5xl">
+                  <i class="fa-solid fa-kitchen-set"></i>
+                </div>
+              </div>
+              <div class="absolute -bottom-1 -left-1 bg-white border border-bakery-200 rounded-full py-1 px-3 text-xs font-bold text-bakery-800 shadow-sm">
+                2020 ✨
+              </div>
+            </div>
+
+            <!-- Story Text Content -->
+            <div class="space-y-3">
+              <div class="inline-block px-3 py-1 rounded-lg bg-bakery-200/60 text-bakery-800 text-xs font-bold">
+                حكايتنا من المطبخ للقلب
+              </div>
+              
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-warmdark">
+                عن كرم بيكري
+              </h2>
+
+              <p class="text-base sm:text-lg text-stone-700 leading-relaxed font-normal">
+                بدأت <span class="font-bold text-bakery-800">منى</span> الخبيز من مطبخها سنة 2020 بحب وشغف حقيقي لكل تفصيلة، ودلوقتي بتخدم مئات العائلات في القاهرة في أسعد لحظاتهم ومناسباتهم المميزة بأطيب تورتة وألذ كوكيز.
+              </p>
+
+              <!-- Highlights -->
+              <div class="pt-3 flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm font-semibold text-stone-600">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-heart text-rose-500"></i>
+                  <span>شغف بكل تفصيلة</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-users text-bakery-600"></i>
+                  <span>مئات العائلات السعيدة</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-location-dot text-amber-600"></i>
+                  <span>صُنع في القاهرة</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Bake / Categories Showcase -->
+    <section class="py-14 sm:py-20 bg-bakery-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <h2 class="text-3xl font-extrabold text-warmdark">نخبزها بحب لمناسبتك</h2>
+          <p class="text-stone-600 mt-2 text-sm sm:text-base">اختر ما يناسب احتفالك وتواصل معنا لتنفيذ فكرتك الخاصة</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="bg-white rounded-3xl p-6 border border-bakery-200/80 shadow-sm hover:shadow-md transition-shadow group">
+            <div class="w-14 h-14 rounded-2xl bg-bakery-100 text-bakery-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+              🎂
+            </div>
+            <h3 class="text-xl font-bold text-warmdark mb-2">تورت المناسبات</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-4">
+              تصاميم فريدة لأعياد الميلاد والخطوبة والأفراح بنكهات غنية وحشوات كريمية خفيفة.
+            </p>
+            <a href="https://wa.me/201012345678?text=أود%20تفاصيل%20تورت%20المناسبات" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-bakery-600 hover:text-bakery-800 inline-flex items-center gap-1.5">
+              <span>طلب تصميم مخصص</span>
+              <i class="fa-solid fa-arrow-left text-xs"></i>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-3xl p-6 border border-bakery-200/80 shadow-sm hover:shadow-md transition-shadow group">
+            <div class="w-14 h-14 rounded-2xl bg-bakery-100 text-bakery-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+              🍪
+            </div>
+            <h3 class="text-xl font-bold text-warmdark mb-2">كوكيز حسب الطلب</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-4">
+              كوكيز مقرمش من الأطراف وطري ودايب من الداخل، مطبوع أو مشكّل حسب ثيم حفلتك.
+            </p>
+            <a href="https://wa.me/201012345678?text=أود%20تفاصيل%20طلب%20كوكيز" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-bakery-600 hover:text-bakery-800 inline-flex items-center gap-1.5">
+              <span>طلب علبة كوكيز</span>
+              <i class="fa-solid fa-arrow-left text-xs"></i>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-3xl p-6 border border-bakery-200/80 shadow-sm hover:shadow-md transition-shadow group sm:col-span-2 lg:col-span-1">
+            <div class="w-14 h-14 rounded-2xl bg-bakery-100 text-bakery-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+              🧁
+            </div>
+            <h3 class="text-xl font-bold text-warmdark mb-2">بوكسات تجمعات وسعادة</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-4">
+              ميني كيك وتشكيلة كب كيك وحلويات خفيفة تناسب تجمعات العيلة وأعياد الصحاب.
+            </p>
+            <a href="https://wa.me/201012345678?text=أود%20تفاصيل%20بوكسات%20التجمعات" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-bakery-600 hover:text-bakery-800 inline-flex items-center gap-1.5">
+              <span>طلب بوكس تجمعات</span>
+              <i class="fa-solid fa-arrow-left text-xs"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct Call to Action Footer Card -->
+    <section class="py-12 bg-bakery-100/60">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="bg-gradient-to-r from-bakery-700 to-bakery-800 text-white rounded-3xl p-8 sm:p-12 shadow-xl">
+          <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">جاهز تحتفل بأحلى تورتة؟</h2>
+          <p class="text-bakery-100 text-sm sm:text-base max-w-lg mx-auto mb-6">
+            ابعتلنا صورة فكرتك أو مناسبتك على واتساب ونبدأ نجهزها لك طازة فورًا.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <a href="https://wa.me/201012345678?text=مرحباً،%20أريد%20طلب%20تورتة" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="px-8 py-3.5 rounded-xl bg-white text-bakery-900 font-bold hover:bg-bakery-50 transition-colors shadow-md flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-600 text-xl"></i>
+              <span>اطلب تورتتك عبر واتساب</span>
+            </a>
+            <a href="tel:0223456789" 
+               class="px-6 py-3.5 rounded-xl bg-bakery-900/50 hover:bg-bakery-900 text-white font-bold transition-colors border border-bakery-400/40 flex items-center gap-2">
+              <i class="fa-solid fa-phone text-sm"></i>
+              <span>اتصل: 0223456789</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-warmdark text-stone-400 py-10 border-t border-stone-800 text-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
+      <div>
+        <p class="text-white font-bold text-lg mb-1">كرم بيكري</p>
+        <p class="text-xs text-stone-400">مخبوزات بيتي من القاهرة من 2020 • تورت وكوكيز حسب الطلب</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 text-xs text-stone-300">
+        <span>واتساب: <a href="https://wa.me/201012345678" class="text-bakery-300 hover:underline" dir="ltr">01012345678</a></span>
+        <span>هاتف: <a href="tel:0223456789" class="text-bakery-300 hover:underline" dir="ltr">0223456789</a></span>
+        <span>توصيل لكافة مناطق القاهرة</span>
+      </div>
+
+      <p class="text-xs text-stone-500">
+        © 2026 كرم بيكري. جميع الحقوق محفوظة.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
